@@ -5,8 +5,8 @@
                     <div class="row">
                         <div class="col-md-8 col-sm-8">
                             <div class="call-to-action-left text-black">
-                                <h4 class="text-uppercase m-b10 m-t0">Subscribe to our newsletter!</h4>
-                                <span>Never Miss Anything From Construx By Signing Up To Our Newsletter.</span>
+                                <h4 class="text-uppercase m-b10 m-t0">Subscreva-se e receba newsletter!</h4>
+                                <span>Acompanhe-nos, fique por dentro de todas às novidades da FFF.</span>
                             </div>
                         </div>
                         
@@ -16,7 +16,7 @@
                                     <div class="newsletter-bx">
                                         <form role="search" method="post">
                                             <div class="input-group">
-                                                <input name="news-letter" class="form-control" placeholder="ENTER YOUR EMAIL" type="text">
+                                                <input name="news-letter" class="form-control" placeholder="INSIRA O SEU EMAIL" type="text">
                                                 <span class="input-group-btn">
                                                     <button type="submit" class="site-button"><i class="fa fa-paper-plane-o"></i></button>
                                                 </span>
@@ -41,7 +41,9 @@
                                 <div class="logo-footer clearfix p-b15">
                                     <a href="index.html"><img src="assets/images/logo-light.png" alt=""></a>
                                 </div>
-								<p class="max-w400">Today we can tell you, thanks to your passion, hard work creativity, and expertise, you delivered us the most beautiful house great looks.</p>                                
+								<p class="max-w400">Today we can tell you, thanks to your passion, 
+                                    hard work creativity, and expertise, you delivered us the most beautiful 
+                                    house great looks.</p>                                
                                 
                                 <ul class="social-icons  mt-social-links">
                                     <li><a href="javascript:void(0);" class="fa fa-google"></a></li>
@@ -56,12 +58,12 @@
                         <!-- RESENT POST -->
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="widget widget_address_outer">
-                                <h4 class="widget-title">Contact Us</h4>
+                                <h4 class="widget-title">Contacte-nos</h4>
                                 <ul class="widget_address">
-                                    <li>34/7 Liverpool Street, Suite 636, London, United Kingdom</li>
-                                    <li>7xthemedemo@gmail.com</li>
-                                    <li>(+298) 012-3456-789</li>
-                                    <li>(+298) 146-6543-480</li>
+                                    <li>Luanda, Viana, Luanda-Sul, Rua Direita da Clinica Dentária</li>
+                                    <li>comercial@figueirafilipaefilhos.com</li>
+                                    <li>(+244) 012-345-789</li>
+                                    <li>(+244) 146-654-480</li>
                                 </ul>
                            
                             </div>                                              	
@@ -70,7 +72,7 @@
                         <!-- USEFUL LINKS -->
                         <div class="col-lg-3 col-md-6 col-sm-6 footer-col-3">
                             <div class="widget widget_services inline-links">
-                                <h4 class="widget-title">Useful links</h4>
+                                <h4 class="widget-title">Usefual links</h4>
                                 <ul>
                                     <li><a href="about-1.html">About</a></li>
                                     <li><a href="project-grid.html">Projects</a></li>
@@ -83,7 +85,7 @@
                         <!-- TAGS -->
                         <div class="col-lg-3 col-md-6 col-sm-6">
 							<div class="widget recent-posts-entry-date">
-                                <h4 class="widget-title">Resent Post</h4>
+                                <h4 class="widget-title">Posts Recentes</h4>
                                 <div class="widget-post-bx">
                                     <div class="bdr-light-blue widget-post clearfix  bdr-b-1 m-b10 p-b10">
                                         <div class="mt-post-date text-center text-uppercase text-white p-tb5">
@@ -136,7 +138,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="mt-footer-bot-center">
-                            <span class="copyrights-text">© 2018 Your Company. Designed By 7xtheme.</span>
+                            <span class="copyrights-text">© 2022 Figueira, Filipa e Filhos. Development by DigitalAlfre.</span>
                         </div>
                     </div>
                 </div>

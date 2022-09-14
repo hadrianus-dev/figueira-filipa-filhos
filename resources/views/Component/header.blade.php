@@ -15,8 +15,8 @@
                                     <span class="icon-cell  text-primary"><i class="fa fa-map-marker"></i></span>
                                 </div>
                                 <div class="icon-content">
-                                    <strong>Newyork, USA</strong>
-                                    <span>Flat 544, Reynolds Neck Str</span>
+                                    <strong>Luanda, Angola</strong>
+                                    <span>Viana, Luanda Sul, Rua Direita da Clinica Dentária</span>
                                 </div>
                             </li>
                             <li>
@@ -25,13 +25,13 @@
                                     <span class="icon-cell  text-primary"><i class="fa fa-phone"></i></span>
                                 </div>
                                 <div class="icon-content">
-                                    <strong>+324 123 45 978</strong>
-                                    <span>Mon - Friday: 9.00 to 18.00</span>
+                                    <strong>+244 123 456 789</strong>
+                                    <span>Segunda - Sexta: 8:00/17:00</span>
                                 </div>
                             
                             </li>
                             <li class="btn-col-last">
-                                <a class="site-button-secondry btn-effect">Requet a Quote</a>
+                                <a class="site-button-secondry btn-effect">Pedir Cotação</a>
                             </li>
                         </ul>
                     </div>
@@ -72,24 +72,24 @@
                                         <div class="mt-icon-box-wraper center p-b30">
                                             <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-phone"></i></div>
                                             <div class="icon-content">
-                                                <h5 class="m-t0 font-weight-500">Phone number</h5>
-                                                <p>(075) 123-7654</p>
+                                                <h5 class="m-t0 font-weight-500">Contacto</h5>
+                                                <p>(+244) 123-222-222</p>
                                             </div>
                                         </div>
                                         
                                         <div class="mt-icon-box-wraper center p-b30">
                                             <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-envelope"></i></div>
                                             <div class="icon-content">
-                                                <h5 class="m-t0 font-weight-500">Email address</h5>
-                                                <p>7xthemehelp@gmail.com</p>
+                                                <h5 class="m-t0 font-weight-500">Endereço Eletrônico</h5>
+                                                <p>comercia@figueirafilipaefilhos.com</p>
                                             </div>
                                         </div>
                                         
                                         <div class="mt-icon-box-wraper center p-b30">
                                             <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-map-marker"></i></div>
                                             <div class="icon-content">
-                                                <h5 class="m-t0 font-weight-500">Address info</h5>
-                                                <p>201 Liverpool Street, Suite 721, London</p>
+                                                <h5 class="m-t0 font-weight-500">Nosso Endereço</h5>
+                                                <p>Luanda-Sul, Rua Direita da Clinica Dentária</p>
                                             </div>
                                         </div>
                                     </div>                                          
@@ -104,84 +104,43 @@
                                           </ul>
                                     </div>
                                     <div class="text-center">
-                                        <h4 class="font-weight-600">&copy;  2019 7xtheme</h4> 
+                                        <h4 class="font-weight-600">&copy;  2019 FFF</h4> 
                                     </div>                                                                    			
                                  </div>
                             </div> 
                         </div>     
                         <!-- SITE Search -->
                         <div id="search"> 
-                                <span class="close"></span>
-                                <form role="search" id="searchform" action="/search" method="get" class="radius-xl">
-                                    <div class="input-group">
-                                        <input value="" name="q" type="search" placeholder="Type to search"/>
-                                        <span class="input-group-btn"><button type="button" class="search-btn"><i class="fa fa-search arrow-animation"></i></button></span>
-                                    </div>   
-                                </form>
-                            </div>
+                            <span class="close"></span>
+                            <form role="search" id="searchform" action="/search" method="get" class="radius-xl">
+                                <div class="input-group">
+                                    <input value="" name="q" type="search" placeholder="Type to search"/>
+                                    <span class="input-group-btn"><button type="button" class="search-btn"><i class="fa fa-search arrow-animation"></i></button></span>
+                                </div>   
+                            </form>
+                        </div>
                         
                         <!-- MAIN Nav -->
                         <div class="header-nav navbar-collapse collapse">
                                 <ul class=" nav navbar-nav">
                                     <li class="active">
                                         <a href="javascript:;">Home</a>
-                                     <ul class="sub-menu">
-
+                                        <ul class="sub-menu">
                                             <li>
-                                                <a href="index.html">Home-1</a>
+                                                <a href="#">Home</a>
                                             </li>
-                                            <li>
-                                                <a href="index-2.html">Home-2</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-3.html">Home-3 boxed style</a>
-                                            </li> 
-                                            <li>
-                                                <a href="index-4.html">Home-4</a>
-                                            </li>                                          
                                         </ul>                                                    
                                     </li>
 
                                     <li>
-                                        <a href="about-1.html">About us</a>
+                                        <a href="about-1.html">Sobre</a>
                                     </li> 
                                     <li>
-                                        <a href="services.html">Services</a>
-                                    </li> 
-                                    <li>
-                                        <a href="javascript:;">Pages</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="javascript:;">Blog</a>
-                                                <ul class="sub-menu has-child">
-                                                    <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                    <li><a href="blog-listing.html">Blog Listing</a></li>
-                                                    <li><a href="blog-masonry.html">Blog Masonry</a></li>
-                                                </ul>
-                                            </li>                                        
-                                            <li>
-                                                <a href="faq.html">FAQ</a>
-                                            </li>
-                                            <li>
-                                                <a href="error-404.html">Error 404</a>
-                                            </li>                                            
-                                            <li>
-                                                <a href="contact-1.html">Contact us</a>
-                                            </li>
-                                        </ul>
-                                    </li>                                                                                                                                               
-                                    <li>
-                                        <a href="javascript:;">Post detail</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="post-image.html">Post Image</a></li>
-                                            <li><a href="post-gallery.html">Post Gallery</a></li>
-                                            <li><a href="post-video.html">Post Video</a></li>
-                                            <li><a href="post-right-sidebar.html">Post Right Sidebar</a></li>                                        
-                                        </ul>                                    
-                                    </li>                                         
+                                        <a href="services.html">Serviços</a>
+                                    </li>                              
 
                                     <li>
-                                        <a href="javascript:;">Projects</a>
+                                        <a href="javascript:;">Portifólio</a>
                                         <ul class="sub-menu">
                                             <li><a href="project-grid.html">Project Grid</a></li>
                                             <li><a href="project-masonry.html">Project Masonry</a></li>
@@ -191,20 +150,19 @@
                                             <li><a href="project-detail.html">Project Detail</a></li>                                        
                                         </ul>
                                     </li>
-                                    <li class="submenu-direction">
-                                        <a href="javascript:;">Shortcodes</a>
+
+                                    <li>
+                                        <a href="javascript:;">Nóticias</a>
                                         <ul class="sub-menu">
-                                            <li><a href="accordian.html">Accordian</a></li>
-                                            <li><a href="button.html">Button</a></li>
-                                            <li><a href="icon_box.html">Icon box style</a></li>
-                                            <li><a href="list_group.html">List group</a></li>
-                                            <li><a href="modal_popup.html">Modal popup</a></li>
-                                            <li><a href="tabs.html">Tabs</a></li>
-                                            <li><a href="table.html">Table</a></li>
-                                            <li><a href="video.html">Video  </a></li>
-                                            <li><a href="icon-font.html">Icon Font </a></li> 
-                                        </ul>                                    
-                                    </li>                                
+                                            <li><a href="project-grid.html">Project Grid</a></li>
+                                            <li><a href="project-masonry.html">Project Masonry</a></li>
+                                            <li><a href="project-carousel.html">Project Carousel</a></li>
+                                            <li><a href="project-classic.html">Project Classic-1</a></li>
+                                            <li><a href="project-classic2.html">Project Classic-2</a></li>
+                                            <li><a href="project-detail.html">Project Detail</a></li>                                        
+                                        </ul>
+                                    </li>
+                                                                  
                                 </ul>
                             </div>
                     </div>
