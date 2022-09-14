@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Web\Home\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/* Route::get('/', function () {
+    return view('layouts.base');
+}); */
+
+Route::get('/', HomeController::class)->name('home');
