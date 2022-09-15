@@ -12,7 +12,7 @@
                 data-easein="default" 
                 data-easeout="default" 
                 data-masterspeed="default"  
-                data-thumb="assets/images/main-slider/slider2/slide1.jpg"  
+                data-thumb="{{asset('assets/images/main-slider/slider2/slide1.jpg')}}"  
                 data-rotate="0"  
                 data-fstransition="fade" 
                 data-fsmasterspeed="300" 
@@ -31,7 +31,7 @@
                 data-param10="" 
                 data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/main-slider/slider2/slide1.jpg" alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""/>
+                    <img src="{{asset('assets/images/main-slider/slider2/slide1.jpg')}}" alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""/>
                     <!-- LAYERS -->
                     <!-- LAYER NR. 1 [ for overlay ] -->
                     <div class="tp-caption tp-shape tp-shapewrapper " 
@@ -184,7 +184,7 @@
                 data-easein="default" 
                 data-easeout="default" 
                 data-masterspeed="default"  
-                data-thumb="assets/images/main-slider/slider2/slide2.jpg"  
+                data-thumb="{{asset('assets/images/main-slider/slider2/slide2.jpg')}}"  
                 data-rotate="0"  
                 data-fstransition="fade" 
                 data-fsmasterspeed="300" 
@@ -203,7 +203,7 @@
                 data-param10="" 
                 data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/main-slider/slider2/slide2.jpg" alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="">
+                    <img src="{{asset('assets/images/main-slider/slider2/slide2.jpg')}}" alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="">
                     <!-- LAYERS -->
                     <!-- LAYER NR. 1 [ for overlay ] -->
                     <div class="tp-caption tp-shape tp-shapewrapper " 
@@ -356,7 +356,7 @@
                 data-easein="default" 
                 data-easeout="default" 
                 data-masterspeed="default"  
-                data-thumb="assets/images/main-slider/slider2/slide3.jpg"  
+                data-thumb="{{asset('assets/images/main-slider/slider2/slide3.jpg')}}"  
                 data-rotate="0"  
                 data-fstransition="fade" 
                 data-fsmasterspeed="300" 
@@ -375,7 +375,7 @@
                 data-param10="" 
                 data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/main-slider/slider2/slide3.jpg" alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="">
+                    <img src="{{asset('assets/images/main-slider/slider2/slide3.jpg')}}" alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="">
                     <!-- LAYERS -->
                     <!-- LAYER NR. 1 [ for overlay ] -->
                     <div class="tp-caption tp-shape tp-shapewrapper " 

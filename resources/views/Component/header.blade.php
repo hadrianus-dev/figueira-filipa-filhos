@@ -5,7 +5,7 @@
                 <div class="container">
                     <div class="logo-header">
                         <a href="index.html">
-                            <img src="assets/images/logo-light.png" width="216" height="37" alt="" />
+                            <img src="{{asset('assets/images/logo-light.png')}}" width="216" height="37" alt="" />
                         </a>
                     </div>
                     <div class="header-info">
@@ -63,7 +63,7 @@
                         <!-- ETRA Nav -->
 
                         <!-- Contact Nav -->                            
-                        <div class="contact-slide-hide " style="background-image:url(assets/images/background/bg-5.png)"> 
+                        <div class="contact-slide-hide " style="background-image:url({{asset('assets/images/background/bg-5.png')}})"> 
                             <div class="contact-nav">
                                  <a href="javascript:void(0)" class="contact_close">&times;</a>
                                  <div class="contact-nav-form p-a30">

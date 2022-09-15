@@ -1,6 +1,6 @@
         <!-- FOOTER START -->
         <footer class="site-footer footer-large  footer-light	footer-wide">
-            <div class="container call-to-action-wrap bg-no-repeat bg-center" style="background-image:url(assets/images/background/bg-site.png);">
+            <div class="container call-to-action-wrap bg-no-repeat bg-center" style="background-image:url({{asset('assets/images/background/bg-site.png')}});">
                 <div class="p-a30  bg-primary">
                     <div class="row">
                         <div class="col-md-8 col-sm-8">
@@ -39,7 +39,7 @@
                             <div class="widget widget_about">
                                 <!--<h4 class="widget-title">About Company</h4>-->
                                 <div class="logo-footer clearfix p-b15">
-                                    <a href="index.html"><img src="assets/images/logo-light.png" alt=""></a>
+                                    <a href="index.html"><img src="{{asset('assets/images/logo-light.png')}}" alt=""></a>
                                 </div>
 								<p class="max-w400">Today we can tell you, thanks to your passion, 
                                     hard work creativity, and expertise, you delivered us the most beautiful 
