@@ -94,14 +94,14 @@
                                         </div>
                                     </div>                                          
                                     <div class="full-social-bg">
-                                          <ul>
-                                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#" class="google"><i class="fa fa-google"></i></a></li>
-                                                <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="#" class="tumblr"><i class="fa fa-tumblr"></i></a></li>
-                                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
-                                          </ul>
+                                        <ul>
+                                          <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                          <li><a href="#" class="google"><i class="fa fa-google"></i></a></li>
+                                          <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                                          <li><a href="#" class="tumblr"><i class="fa fa-tumblr"></i></a></li>
+                                          <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                          <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+                                        </ul>
                                     </div>
                                     <div class="text-center">
                                         <h4 class="font-weight-600">&copy;  2019 FFF</h4> 
@@ -123,17 +123,12 @@
                         <!-- MAIN Nav -->
                         <div class="header-nav navbar-collapse collapse">
                                 <ul class=" nav navbar-nav">
-                                    <li class="active">
-                                        <a href="javascript:;">Home</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="#">Home</a>
-                                            </li>
-                                        </ul>                                                    
+                                    <li class="{{Route::currentRouteName() == 'home' ? 'active' : ''}}">
+                                        <a href="{{route('home')}}">Home</a>
                                     </li>
 
-                                    <li>
-                                        <a href="about-1.html">Sobre</a>
+                                    <li class="{{Route::currentRouteName() == 'about' ? 'active' : ''}}">
+                                        <a href="{{route('about')}}">Sobre</a>
                                     </li> 
                                     <li>
                                         <a href="services.html">Serviços</a>
@@ -142,25 +137,14 @@
                                     <li>
                                         <a href="javascript:;">Portifólio</a>
                                         <ul class="sub-menu">
-                                            <li><a href="project-grid.html">Project Grid</a></li>
-                                            <li><a href="project-masonry.html">Project Masonry</a></li>
-                                            <li><a href="project-carousel.html">Project Carousel</a></li>
-                                            <li><a href="project-classic.html">Project Classic-1</a></li>
-                                            <li><a href="project-classic2.html">Project Classic-2</a></li>
-                                            <li><a href="project-detail.html">Project Detail</a></li>                                        
+                                            <li><a href="#">Ver Todos</a></li>
+                                            <li><a href="#">Projectos Em Andamento</a></li>
+                                            <li><a href="#">Projectos Concluídos</a></li>                                   
                                         </ul>
                                     </li>
 
                                     <li>
-                                        <a href="javascript:;">Nóticias</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="project-grid.html">Project Grid</a></li>
-                                            <li><a href="project-masonry.html">Project Masonry</a></li>
-                                            <li><a href="project-carousel.html">Project Carousel</a></li>
-                                            <li><a href="project-classic.html">Project Classic-1</a></li>
-                                            <li><a href="project-classic2.html">Project Classic-2</a></li>
-                                            <li><a href="project-detail.html">Project Detail</a></li>                                        
-                                        </ul>
+                                        <a href="javascript:;">F.F.F News</a>
                                     </li>
                                                                   
                                 </ul>
