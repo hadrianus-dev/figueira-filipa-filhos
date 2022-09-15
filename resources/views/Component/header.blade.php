@@ -130,8 +130,8 @@
                                     <li class="{{Route::currentRouteName() == 'about' ? 'active' : ''}}">
                                         <a href="{{route('about')}}">Sobre</a>
                                     </li> 
-                                    <li>
-                                        <a href="services.html">Serviços</a>
+                                    <li class="{{Route::currentRouteName() == 'service' ? 'active' : ''}}">
+                                        <a href="{{route('service')}}">Serviços</a>
                                     </li>                              
 
                                     <li>

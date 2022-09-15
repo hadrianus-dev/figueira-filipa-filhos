@@ -8,6 +8,6 @@ class ServiceController extends Component
 {
     public function render()
     {
-        return view('livewire.web.service.service-controller');
+        return view('livewire.web.service.service-controller')->layout('layouts.base');
     }
 }

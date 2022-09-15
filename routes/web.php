@@ -2,6 +2,7 @@
 
 use App\Http\Livewire\Web\About\AboutController;
 use App\Http\Livewire\Web\Home\HomeController;
+use App\Http\Livewire\Web\Service\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +22,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('home');
 Route::get('/about', AboutController::class)->name('about');
+Route::get('/service', ServiceController::class)->name('service');
