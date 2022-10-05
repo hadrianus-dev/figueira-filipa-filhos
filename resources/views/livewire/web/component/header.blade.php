@@ -131,7 +131,7 @@
                                         <a href="{{route('about')}}">Sobre</a>
                                     </li> 
                                     <li class="{{Route::currentRouteName() == 'service' ? 'active' : ''}}">
-                                        <a href="{{route('service')}}">Serviços</a>
+                                        <a href="{{route('serviceindex')}}">Serviços</a>
                                     </li>                              
 
                                     <li>

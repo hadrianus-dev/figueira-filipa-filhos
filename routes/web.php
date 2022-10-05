@@ -1,25 +1,31 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Web\pages\BlogController;
 use App\Http\Livewire\Web\pages\HomeController;
 use App\Http\Livewire\Web\pages\AboutController;
 use App\Http\Livewire\Web\pages\ServiceController;
+use App\Http\Livewire\Web\Pages\PortfolioController;
+use App\Http\Livewire\Web\pages\BlogSingleController;
+use App\Http\Livewire\Web\Pages\ContactController;
+use App\Http\Livewire\Web\Pages\PortfolioSingleController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
-/* Route::get('/', function () {
-    return view('layouts.base');
-}); */
 
 Route::get('/', HomeController::class)->name('home');
 Route::get('/about', AboutController::class)->name('about');
-Route::get('/service', ServiceController::class)->name('service');
+Route::get('/contact', ContactController::class)->name('contact');
+
+Route::prefix('service')->as('service')->group(function (){
+    Route::get('/', ServiceController::class)->name('index');
+});
+
+Route::prefix('post')->as('post')->group(function(){
+    Route::get('/', BlogController::class)->name('index'); 
+    Route::get('{post:slug}', BlogSingleController::class)->name('show');
+});
+
+Route::prefix('portfolio')->as('portfolio')->group(function(){
+    Route::get('/', PortfolioController::class)->name('index'); 
+    Route::get('{portfolio:slug}', PortfolioSingleController::class)->name('show');
+});
