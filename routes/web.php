@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Livewire\Web\About\AboutController;
-use App\Http\Livewire\Web\Home\HomeController;
-use App\Http\Livewire\Web\Service\ServiceController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Web\pages\HomeController;
+use App\Http\Livewire\Web\pages\AboutController;
+use App\Http\Livewire\Web\pages\ServiceController;
 
 /*
 |--------------------------------------------------------------------------

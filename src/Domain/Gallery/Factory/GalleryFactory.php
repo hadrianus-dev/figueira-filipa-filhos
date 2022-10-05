@@ -11,11 +11,11 @@ class GalleryFactory
     public static function create(array $attributes): GalleryValueObject 
     {
         return new GalleryValueObject(
-            title: $attributes['title'],
-            description: $attributes['description'],
+            published: $attributes['published'],
             cover: $attributes['cover'], 
-            post_id: $attributes['post_id'], 
-            portfolio_id: $attributes['portfolio_id'], 
+            status: (isset($attributes['status'])) ? $attributes['status'] : null, 
+            post_id: (isset($attributes['post_id'])) ? $attributes['post_id'] : null, 
+            portfolio_id: (isset($attributes['portfolio_id'])) ? $attributes['portfolio_id'] : null, 
         );
     }
 }

@@ -46,9 +46,9 @@
     </head>
     <body>
         <div class="page-wraper"> 
-            @include('Component.header')
+            <livewire:web.component.header>
             {{ $slot }}
-            @include('Component.footer')
+            <livewire:web.component.footer>
 
             <!-- BUTTON TOP START -->
             <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>

@@ -21,11 +21,9 @@ class Gallery extends Model
 
     protected $fillable = [
         'key',
-        'title',
-        'slug',
-        'description',
         'published',
         'cover',
+        'status',
         'post_id',
         'portfolio_id'
     ];

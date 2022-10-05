@@ -5,7 +5,7 @@
                 <div class="container">
                     <div class="logo-header">
                         <a href="index.html">
-                            <img src="{{asset('assets/images/logo-light.png')}}" width="216" height="37" alt="" />
+                            <img src="{{asset('assets/images/logoff.png')}}" width="216" height="37" alt="" />
                         </a>
                     </div>
                     <div class="header-info">
