@@ -15,7 +15,7 @@
                         
                             <div>
                                 <ul class="mt-breadcrumb breadcrumb-style-2">
-                                    <li><a href="javascript:void(0);">Home</a></li>
+                                    <li><a href="{{route('home')}}">Home</a></li>
                                     <li>Services</li>
                                 </ul>
                             </div>
@@ -44,114 +44,22 @@
                     <!-- IMAGE CAROUSEL START -->
                     <div class="section-content">
                         <div class="row">
-                        	<div class="col-md-4 col-sm-6">
-                            	<div class="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
-                                    <div class="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving" style="background-image:url(assets/images/background/line.png)">
-                                        <span class="icon-cell text-secondry"><i class="flaticon-city"></i></span>
-                                    </div>
-                                    <div class="icon-content">
-                                        <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">Rooms & Halls</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions.</p>
-                                        <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        	<div class="col-md-4 col-sm-6">
-                            	<div class="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
-                                    <div class="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving" style="background-image:url(assets/images/background/line.png)">
-                                        <span class="icon-cell text-secondry"><i class="flaticon-paint"></i></span>
-                                    </div>
-                                    <div class="icon-content">
-                                        <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">Renovation</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions.</p>
-                                         <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        	<div class="col-md-4 col-sm-6">
-                            	<div class="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
-                                    <div class="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving" style="background-image:url(assets/images/background/line.png)">
-                                        <span class="icon-cell text-secondry"><i class="flaticon-crane"></i></span>
-                                    </div>
-                                    <div class="icon-content">
-                                        <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">Construction</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions..</p>
-                                         <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        	<div class="col-md-4 col-sm-6">
-                            	<div class="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
-                                    <div class="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving" style="background-image:url(assets/images/background/line.png)">
-                                        <span class="icon-cell text-secondry"><i class="flaticon-decorating"></i></span>
-                                    </div>
-                                    <div class="icon-content">
-                                        <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">Interior</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions.</p>
-                                         <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                                    </div>
-                                </div>
-                            </div> 
-                        	<div class="col-md-4 col-sm-6">
-                            	<div class="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
-                                    <div class="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving" style="background-image:url(assets/images/background/line.png)">
-                                        <span class="icon-cell text-secondry"><i class="flaticon-chart"></i></span>
-                                    </div>
-                                    <div class="icon-content">
-                                        <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">Professional Opinion</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions.</p>
-                                         <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        	<div class="col-md-4 col-sm-6">
-                            	<div class="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
-                                    <div class="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving" style="background-image:url(assets/images/background/line.png)">
-                                        <span class="icon-cell text-secondry"><i class="flaticon-sketch"></i></span>
-                                    </div>
-                                    <div class="icon-content">
-                                        <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">Accurate Engineering</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions.</p>
-                                         <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+                            @forelse ($Services as $service)
                             <div class="col-md-4 col-sm-6">
-                            	<div class="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
-                                    <div class="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving" style="background-image:url(assets/images/background/line.png)">
-                                        <span class="icon-cell text-secondry"><i class="flaticon-builder"></i></span>
+                                <div class="mt-icon-box-wraper p-a30 center m-b30 bg-white">
+                                    <div class="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving" style="background-image:url({{asset('assets/images/background/line.png')}})">
+                                        <span class="icon-cell text-secondry"><i class="flaticon-worker"></i></span>
                                     </div>
                                     <div class="icon-content">
-                                        <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">General Builder</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions.</p>
-                                         <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                                        <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">{{Str::ucfirst($service->title)}}</h4>
+                                        <p>{{Str::words($service->body, 10, '...')}}</p>
+                                        <a href="{{route('serviceshow', $service->slug)}}" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6">
-                            	<div class="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
-                                    <div class="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving" style="background-image:url(assets/images/background/line.png)">
-                                        <span class="icon-cell text-secondry"><i class="flaticon-drill"></i></span>
-                                    </div>
-                                    <div class="icon-content">
-                                        <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">Electricity</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions.</p>
-                                         <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                            	<div class="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
-                                    <div class="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving" style="background-image:url(assets/images/background/line.png)">
-                                        <span class="icon-cell text-secondry"><i class="flaticon-art-and-design"></i></span>
-                                    </div>
-                                    <div class="icon-content">
-                                        <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">Refurbishment</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions.</p>
-                                         <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                                    </div>
-                                </div>
-                            </div>                                                                                                              
+                            @empty
+                                
+                            @endforelse                                                                                                            
                         </div>
                     </div>
                 </div>

@@ -4,15 +4,16 @@ declare(strict_types=1);
 
 namespace Domain\Portfolio\Models;
 
+use Domain\Comment\Models\Comment;
 use Domain\Gallery\Models\Gallery;
+use Domain\Service\Models\Service;
 use Illuminate\Database\Eloquent\Model;
 use Domain\Shared\Models\Concerns\HasSlug;
-use Domain\Portfolio\Models\Builders\PortfolioBuilder;
-use Domain\Service\Models\Service;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use JustSteveKing\KeyFactory\Models\Concerns\HasKey;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Domain\Portfolio\Models\Builders\PortfolioBuilder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOneOrMany;
 
 class Portfolio extends Model
@@ -73,6 +74,14 @@ class Portfolio extends Model
         return $data;
     }
 
+    public function comment(): HasMany
+    {
+        return $this->hasMany(
+            related: Comment::class,
+            foreignKey: 'portfolio_id'
+        );
+    }
+    
     public function gallery(): HasMany
     {
         return $this->hasMany(

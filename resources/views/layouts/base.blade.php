@@ -61,7 +61,7 @@
             </div>
         </div>
         <!-- LOADING AREA  END ====== -->
-         
+         <livewire:web.component.quote-controller>
         <!-- JAVASCRIPT  FILES ========================================= --> 
         <script  src="{{asset('assets/js/jquery-1.12.4.min.js')}}"></script><!-- JQUERY.MIN JS -->
         <script  src="{{asset('assets/js/bootstrap.min.js')}}"></script><!-- BOOTSTRAP.MIN JS -->

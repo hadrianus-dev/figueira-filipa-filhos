@@ -286,14 +286,14 @@
                                     <div class="mt-post-info p-a30">
                                         
                                         <div class="mt-post-title ">
-                                            <h4 class="post-title"><a href="javascript:void(0);">{{Str::ucfirst($post->category->title)}}</a></h4>
+                                            <h4 class="post-title"><a href="{{route('postshow', $post->slug)}}">{{Str::ucfirst($post->category->title)}}</a></h4>
                                         </div>
                                         
                                         <div class="mt-post-meta ">
                                             <ul>
                                                 <li class="post-date"> <i class="fa fa-calendar"></i><strong>17</strong> <span>Feb</span> </li>
                                                 <li class="post-author"><i class="fa fa-user"></i><a href="javascript:void(0);">By <span>{{Str::ucfirst($post->user->first_name)}}</span></a> </li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> <a href="javascript:void(0);">0 Comments</a> </li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> <a href="javascript:void(0);">{{$post->comment->count()}} Comentario(s)</a> </li>
                                             </ul>
                                         </div>
                                         
@@ -357,7 +357,7 @@
                                                 <div class="icon-content">
                                                     <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">{{Str::ucfirst($service->title)}}</h4>
                                                     <p>{{Str::words($service->body, 10, '...')}}</p>
-                                                    <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                                                    <a href="{{route('serviceshow', $service->slug)}}" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -401,98 +401,34 @@
                         </div>
                     </div>                   
                     <!-- TITLE END --> 
-                    <div class="section-content">
-                        
-                        <div class="filter-wrap text-center">
-                            <ul class="filter-navigation inline-navigation masonry-filter link-style  text-uppercase">
-                                <li class="active"><a data-filter="*" href="#" data-hover="All">Todos</a></li>
-                                <li><a data-filter=".cat-1" href="#" data-hover="Construction">Montagens</a></li>
-                                <li><a data-filter=".cat-2" href="#" data-hover="Renovation">Instalações</a></li>
-                                <li><a data-filter=".cat-3" href="#" data-hover="Outdoor">Manutenções</a></li>
-                                <li><a data-filter=".cat-4" href="#" data-hover="Interiors">Fiscalização </a></li>
-                                <li><a data-filter=".cat-5" href="#" data-hover="Consulting">Industrial</a></li>
-                            </ul>
-                        </div>        
-                        
-                    </div>
-                    <div class="section-content">
-                        
-                        <div class="portfolio-wrap row mfp-gallery product-stamp clearfix">
-                            <!-- COLUMNS 1 -->
-                            <div class="masonry-item  cat-1 col-md-4 col-sm-6 m-b30">
-                                <div class="image-effect-one hover-shadow">
-                                    <img src="{{asset('assets/images/projects/square/pic4.jpg')}}" alt="" />
-                                    <div class="figcaption">
-                                        <h4>2-storey House</h4>
-                                        <p>Construction, interior</p>
-                                        <a href="#"><i class="link-plus bg-primary"></i></a>
+                        <!-- SECTION CONTENT START -->
+
+                        <div class="container-fluid">
+                            <div class="section-content">            
+                                <div class="work-carousel-outer">
+                                    <div class="owl-carousel work-carousel owl-btn-vertical-center">
+                                        @foreach ($portfolios as $portfolio)
+                                        <!--Portfolio Single Start-->
+                                        @if ($portfolio->gallery())
+                                        <!-- COLUMNS 1 -->
+                                        <div class="item mt-box">
+                                            <div class="mt-img-effect mt-img-overlay7">
+                                                <img src="{{env('MY_PATH').$portfolio->gallery()->first()->cover}}" alt="">
+                                        </div>
+                                            <div class="mt-info p-a30">
+                                                <h4 class="m-b20 m-t0"><a href="{{route('portfolioshow', $portfolio->slug)}}">{{$portfolio->title}}</a></h4>
+                                                <p>{{Str::words($portfolio->body, 8, '...')}}</p>
+                                                <a href="{{route('portfolioshow', $portfolio->slug)}}" class="site-button btn-effect">Ver Portifólio</a>
+                                            </div>                                   
+                                        </div>
+                                        @endif
+                                        @endforeach                                                                                                     
                                     </div>
-                                </div>
-                            </div>  
-                            
-                            <!-- COLUMNS 2 -->
-                            <div class="masonry-item  cat-2 col-md-4 col-sm-6 m-b30">
-                                <div class="image-effect-one hover-shadow">
-                                    <img src="{{asset('assets/images/projects/square/pic2.jpg')}}" alt="" />
-                                    <div class="figcaption">
-                                        <h4>City Buildings</h4>
-                                        <p>Buildings, Engineering</p>
-                                        <a href="#"><i class="link-plus bg-primary"></i></a>
-                                    </div>
-                                </div>
+                                </div> 
                             </div>
-                            
-                            <!-- COLUMNS 3 -->
-                            <div class="masonry-item  cat-3 col-md-4 col-sm-6 m-b30">
-                                <div class="image-effect-one hover-shadow">
-                                    <img src="{{asset('assets/images/projects/square/pic3.jpg')}}" alt="" />
-                                    <div class="figcaption">
-                                        <h4>Living room</h4>
-                                        <p>Aqaba, Jordan</p>
-                                        <a href="#"><i class="link-plus bg-primary"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- COLUMNS 4 -->
-                            <div class="masonry-item  cat-4 col-md-4 col-sm-6 m-b30">
-                                <div class="image-effect-one hover-shadow">
-                                    <img src="{{asset('assets/images/projects/square/pic5.jpg')}}" alt="" />
-                                    <div class="figcaption">
-                                        <h4>Bridge Architecture</h4>
-                                        <p>Design and Construction</p>
-                                        <a href="#"><i class="link-plus bg-primary"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- COLUMNS 5 -->
-                            <div class="masonry-item  cat-5 col-md-4 col-sm-6 m-b30">
-                                <div class="image-effect-one hover-shadow">
-                                    <img src="{{asset('assets/images/projects/square/pic7.jpg')}}" alt="" />
-                                    <div class="figcaption">
-                                        <h4>Feugiat nulla</h4>
-                                        <p>Engineering, interior</p>
-                                        <a href="#"><i class="link-plus bg-primary"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- COLUMNS 6 -->
-                            <div class="masonry-item  cat-4 col-md-4 col-sm-6 m-b30">
-                                <div class="image-effect-one hover-shadow">
-                                    <img src="{{asset('assets/images/projects/square/pic6.jpg')}}" alt="" />
-                                    <div class="figcaption">
-                                        <h4>Skeptic cambridge</h4>
-                                        <p>Construction</p>
-                                        <a href="#"><i class="link-plus bg-primary"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            
                         </div>
-                        
-                    </div>
+                    
+    <!-- SECTION CONTENT END  -->
                     
                 </div>
                 
@@ -517,80 +453,20 @@
                     <!-- IMAGE CAROUSEL START -->
                     <div class="section-content">
                         <div class="row">
-                            
+                            @forelse ($Team as $team)
                             <div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc m-b30   ">
                                 <div class="our-team-2 ">
-                                    <div class="profile-image scale-in-center"><img src="{{asset('assets/images/our-team5/pic4.png')}}" alt="" /></div>
+                                    <div class="profile-image scale-in-center"><img src="{{env('MY_PATH'). $team->cover}}" alt="" /></div>
                                     <div class="figcaption text-black">
-                                        <h4>Avie Beaton </h4>
-                                        <h5>Ceo & Architect</h5>
+                                        <h4>{{$team->full_name}} </h4>
+                                        <h5>{{$team->responsability}}</h5>
                                         
-                                        <div class="icons">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"> <i class="fa fa-twitter"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram"></i></a>
-                                            <a href="#"><i class="fa fa-rss"></i></a>
-                                            <a href="#"> <i class="fa fa-youtube"></i></a>
-                                            <a href="#"> <i class="fa fa-linkedin"></i></a>                                        
-                                        </div>
                                     </div>
                                 </div>
                             </div>                            
+                            @empty
                             
-                            <div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc m-b30   ">
-                                <div class="our-team-2 ">
-                                    <div class="profile-image scale-in-center"><img src="{{asset('assets/images/our-team5/pic3.png')}}" alt="" /></div>
-                                    <div class="figcaption text-black">
-                                        <h4>Ben Jonson </h4>
-                                        <h5>Architect </h5>
-                                        
-                                        <div class="icons">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"> <i class="fa fa-twitter"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram"></i></a>
-                                            <a href="#"><i class="fa fa-rss"></i></a>
-                                            <a href="#"> <i class="fa fa-youtube"></i></a>
-                                            <a href="#"> <i class="fa fa-linkedin"></i></a>    
-                                        </div>
-                                    </div>
-                                </div>                            	
-                            </div>
-                            
-                            <div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc m-b30   ">
-                                <div class="our-team-2 ">
-                                    <div class="profile-image scale-in-center"><img src="{{asset('assets/images/our-team5/pic2.png')}}" alt="" /></div>
-                                    <div class="figcaption text-black">
-                                        <h4>Ashley Fletcher </h4>
-                                        <h5>Finances</h5>
-                                        
-                                        <div class="icons">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"> <i class="fa fa-twitter"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram"></i></a>
-                                            <a href="#"><i class="fa fa-rss"></i></a>
-                                            <a href="#"> <i class="fa fa-youtube"></i></a>
-                                            <a href="#"> <i class="fa fa-linkedin"></i></a>    
-                                        </div>
-                                    </div>
-                                </div>                            	
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc m-b30   ">
-                                <div class="our-team-2">
-                                    <div class="profile-image scale-in-center"><img src="{{asset('assets/images/our-team5/pic5.png')}}" alt="" /></div>
-                                    <div class="figcaption text-black">
-                                        <h4>Ashley Fletcher </h4>
-                                        <h5>Finances</h5>
-                                        <div class="icons">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"> <i class="fa fa-twitter"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram"></i></a>
-                                            <a href="#"><i class="fa fa-rss"></i></a>
-                                            <a href="#"> <i class="fa fa-youtube"></i></a>
-                                            <a href="#"> <i class="fa fa-linkedin"></i></a>    
-                                        </div>
-                                    </div>
-                                </div>                            	
-                            </div>                                                                
+                            @endforelse                               
                             
                         </div>
                     </div>

@@ -15,7 +15,7 @@
                         
                             <div>
                                 <ul class="mt-breadcrumb breadcrumb-style-2">
-                                    <li><a href="javascript:void(0);">Home</a></li>
+                                    <li><a href="{{route('home')}}">Home</a></li>
                                     <li>Quem Somos</li>
                                 </ul>
                             </div>
@@ -82,13 +82,12 @@
                                         <span class="text-primary large-title">25</span>
                                         <span class="large-title-info">Anos de Esperiência</span>
                                     </div>
-                                    <h3 class="font-weight-600">Improving quality of life with an integrated unified approach.</h3>
-                                    <p>Dummy text is also used to demonstrate the appearance of different typefaces and layouts, 
-                                        and in general the content of dummy text is nonsensical. Due to its widespread use texts.  
-                                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl 
-                                        ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputa 
-                                        cumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore 
-                                        te feugait nulla facilisi.</p>
+                                    <h3 class="font-weight-600">{{$Enterprise->slogan}}</h3>
+                                    <p>
+                                        <x-markdown>
+                                            {{$Enterprise->description}}
+                                        </x-markdown>
+                                    </p>
                                     <div class="author-info p-t20">
                                     
                                         <div class="author-signature">
@@ -99,7 +98,7 @@
                                             <h4 class="m-t0">David Houkr</h4>
                                             <p>Architecture &amp; Founder</p>
                                         </div>
-										<a href="javascript:void(0);" class="site-button btn-effect m-b15"><span>Contacto-nos</span></a>                                        
+										<a href="{{route('contact')}}" class="site-button btn-effect m-b15"><span>Contacto-nos</span></a>                                        
                                         
                                     </div>
                                     
@@ -228,69 +227,31 @@
                     <!-- IMAGE Team START -->
                     <div class="section-content">
                         <div class="row">
-                        
-                            <div class="col-md-4 col-sm-6 col-xs-6 col-xs-100pc m-b30   ">
+                        @forelse ($Team as $team)
+                        <div class="col-md-4 col-sm-6 col-xs-6 col-xs-100pc m-b30   ">
                             
-                                <div class="our-team-1 hover-animation-1">
-                                  <div class="profile-image scale-in-center"><img src="assets/images/our-team4/pic1.png" alt="" /></div>
-                                  <div class="figcaption">
-                                    <h4>Avie Beaton </h4>
-                                    <h5>Ceo & Architect</h5>
-                                    <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                            <div class="our-team-1 hover-animation-1">
+                              <div class="profile-image scale-in-center"><img src="{{env('MY_PATH'). $team->cover}}" alt="" /></div>
+                                <div class="figcaption">
+                                    <h4>{{$team->full_name}} </h4>
+                                    <h5>{{$team->responsability}}</h5>
+                                    <p>{{Str::words($team->description, 5, '...')}}</p>
                                     <div class="icons">
                                         <a href="#"><i class="fa fa-facebook"></i></a>
                                         <a href="#"> <i class="fa fa-twitter"></i></a>
                                         <a href="#"> <i class="fa fa-instagram"></i></a>
-										<a href="#"><i class="fa fa-rss"></i></a>
+                                        <a href="#"><i class="fa fa-rss"></i></a>
                                         <a href="#"> <i class="fa fa-youtube"></i></a>
                                         <a href="#"> <i class="fa fa-linkedin"></i></a>                                        
                                     </div>
-                                  </div>
-                                  
+                                </div>
+                              
                             </div>
-                            </div>                            
+                        </div>      
+                        @empty
                             
-                            <div class="col-md-4 col-sm-6 col-xs-6 col-xs-100pc m-b30   ">
-                                <div class="our-team-1 hover-animation-1">
-                                  <div class="profile-image scale-in-center"><img src="assets/images/our-team4/pic2.png" alt="" /></div>
-                                  <div class="figcaption">
-                                    <h4>Ben Jonson </h4>
-                                    <h5>Architect </h5>
-                                    <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
-                                    <div class="icons">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"> <i class="fa fa-twitter"></i></a>
-                                        <a href="#"> <i class="fa fa-instagram"></i></a>
-										<a href="#"><i class="fa fa-rss"></i></a>
-                                        <a href="#"> <i class="fa fa-youtube"></i></a>
-                                        <a href="#"> <i class="fa fa-linkedin"></i></a>    
-                                    </div>
-                                  </div>
-                                  
-                            </div>                            	
-                            </div>
-                            
-                            <div class="col-md-4 col-sm-6 col-xs-6 col-xs-100pc m-b30   ">
-                                <div class="our-team-1 hover-animation-1">
-                                  <div class="profile-image scale-in-center"><img src="assets/images/our-team4/pic3.png" alt="" /></div>
-                                  <div class="figcaption">
-                                    <h4>Ashley Fletcher </h4>
-                                    <h5>Finances</h5>
-                                    <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
-                                    <div class="icons">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"> <i class="fa fa-twitter"></i></a>
-                                        <a href="#"> <i class="fa fa-instagram"></i></a>
-										<a href="#"><i class="fa fa-rss"></i></a>
-                                        <a href="#"> <i class="fa fa-youtube"></i></a>
-                                        <a href="#"> <i class="fa fa-linkedin"></i></a>    
-                                    </div>
-                                  </div>
-                                  
-                            </div>                            	
-                            </div>
-                                                        
-             
+                        @endforelse
+                                
                         </div>
                     </div>
                 </div>

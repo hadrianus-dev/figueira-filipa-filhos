@@ -145,7 +145,7 @@
                     data-paddingleft="[0,0,0,0]"
                     
                     style="z-index:100; text-transform:uppercase; margin:10px">
-                    <a href="javascript:;" class="site-button-secondry btn-effect">Saiba Mais</a>
+                    <a href="{{route('about')}}" class="site-button-secondry btn-effect">Saiba Mais</a>
                     </div>
                     
                     
@@ -170,7 +170,7 @@
                     data-paddingleft="[0,0,0,0]"
                     
                     style="z-index:100; text-transform:uppercase; margin:10px">
-                    <a href="javascript:;" class="site-button btn-effect">Contact-nos</a>
+                    <a href="{{route('contact')}}" class="site-button btn-effect">Contact-nos</a>
                     </div>     
                 </li>
                 
@@ -317,7 +317,7 @@
                     data-paddingleft="[0,0,0,0]"
                     
                     style="z-index:100; text-transform:uppercase;margin:10px">
-                    <a href="javascript:;" class="site-button-secondry btn-effect ">Saiba Mais</a>
+                    <a href="{{route('about')}}" class="site-button-secondry btn-effect ">Saiba Mais</a>
                     </div>
                     
                     <!-- LAYER NR. 6 [ for see all service botton ] -->
@@ -341,7 +341,7 @@
                     data-paddingleft="[0,0,0,0]"
                     
                     style="z-index:100; text-transform:uppercase; margin:10px">
-                    <a href="javascript:;" class="site-button btn-effect">Contacte-nos</a>
+                    <a href="{{route('contact')}}" class="site-button btn-effect">Contacte-nos</a>
                     </div>                                 
 
                 </li>
@@ -483,7 +483,7 @@
                     data-paddingleft="[0,0,0,0]"
                     
                     style="z-index:100; text-transform:uppercase;margin:10px">
-                    <a href="javascript:;" class="site-button-secondry btn-effect">Saiba Mais</a>
+                    <a href="{{route('about')}}" class="site-button-secondry btn-effect">Saiba Mais</a>
                     </div>
                     
                     <!-- LAYER NR. 6 [ for see all service botton ] -->
@@ -507,7 +507,7 @@
                     data-paddingleft="[0,0,0,0]"
                     
                     style="z-index:100; text-transform:uppercase; margin:10px">
-                    <a href="javascript:;" class="site-button btn-effect">Contacte-nos</a>
+                    <a href="{{route('contact')}}" class="site-button btn-effect">Contacte-nos</a>
                     </div>                              
 
                 </li>                                                                                             

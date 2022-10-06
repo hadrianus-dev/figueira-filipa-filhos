@@ -31,7 +31,9 @@
                             
                             </li>
                             <li class="btn-col-last">
-                                <a class="site-button-secondry btn-effect">Pedir Cotação</a>
+                                <a href="javascript:;" data-toggle="modal" data-target="#with-form" class="site-button-secondry btn-effect">
+                                    Pedir Cotação
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -130,21 +132,20 @@
                                     <li class="{{Route::currentRouteName() == 'about' ? 'active' : ''}}">
                                         <a href="{{route('about')}}">Sobre</a>
                                     </li> 
-                                    <li class="{{Route::currentRouteName() == 'service' ? 'active' : ''}}">
+                                    <li class="{{(Route::currentRouteName() == 'serviceindex' || Route::currentRouteName() == 'serviceshow') ? 'active' : ''}}">
                                         <a href="{{route('serviceindex')}}">Serviços</a>
                                     </li>                              
 
-                                    <li>
-                                        <a href="javascript:;">Portifólio</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Ver Todos</a></li>
-                                            <li><a href="#">Projectos Em Andamento</a></li>
-                                            <li><a href="#">Projectos Concluídos</a></li>                                   
-                                        </ul>
+                                    <li class="{{(Route::currentRouteName() == 'portfolioindex' || Route::currentRouteName() == 'portfolioshow') ? 'active' : ''}}">
+                                        <a href="{{route('portfolioindex')}}">Portifólio</a>
                                     </li>
 
-                                    <li>
-                                        <a href="javascript:;">F.F.F News</a>
+                                    <li class="{{(Route::currentRouteName() == 'postindex' || Route::currentRouteName() == 'postshow') ? 'active' : ''}}">
+                                        <a href="{{route('postindex')}}">Notícias</a>
+                                    </li>
+
+                                    <li class="{{(Route::currentRouteName() == 'contact') ? 'active' : ''}}">
+                                        <a href="{{route('contact')}}">Contacto</a>
                                     </li>
                                                                   
                                 </ul>

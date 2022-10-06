@@ -7,6 +7,7 @@ namespace Domain\Post\Models;
 use Domain\Shared\Models\User;
 use Domain\Gallery\Models\Gallery;
 use Domain\Category\Models\Category;
+use Domain\Comment\Models\Comment;
 use Illuminate\Database\Eloquent\Model;
 use Domain\Shared\Models\Concerns\HasSlug;
 use Domain\Post\Models\Builders\PostBuilder;
@@ -62,6 +63,14 @@ class Post extends Model
     {
         return $this->hasMany(
             related: Gallery::class,
+            foreignKey: 'post_id'
+        );
+    }
+    
+    public function comment(): HasMany
+    {
+        return $this->hasMany(
+            related: Comment::class,
             foreignKey: 'post_id'
         );
     }
