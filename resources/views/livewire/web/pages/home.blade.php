@@ -214,13 +214,13 @@
                                         <div class="video-section-inner">
                                             <div class="video-section-content">
                                                 <div class="video-section-left">
-                                                    <a href="https://player.vimeo.com/video/34741214?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" class="mfp-video play-now">
+                                                    <a href="#" class="mfp-video play-now">
                                                         <i class="icon fa fa-play"></i>
                                                         <span class="ripple"></span>
                                                     </a>  
                                                 </div>
                                                 <div class="video-section-right">
-                                                    <a href="https://player.vimeo.com/video/34741214?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" class="mfp-video font-weight-600 text-uppercase">Video Presentation</a>
+                                                    <a href="#" class="mfp-video font-weight-600 text-uppercase">Video Presentation</a>
                                                 </div>
                                             </div> 
                                         </div>  

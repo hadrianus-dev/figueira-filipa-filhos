@@ -9,12 +9,12 @@ use Livewire\Component;
 class Footer extends Component
 {
     public $Enterprise;
-    public $Posts;
+    public $posts;
 
     public function mount(Enterprise $enterprise, Post $post): void
     {
         $this->Enterprise = $enterprise::where('published', true)->first();
-        $this->Posts = $post::where('published', true)->orderBy(    'created_at', 'desc')->limit(4)->get();
+        $this->posts = $post::with(['comment','user'])->where('published', true)->orderBy('created_at', 'desc')->limit(2)->get();
     }
 
     public function render()

@@ -39,11 +39,9 @@
                             <div class="widget widget_about">
                                 <!--<h4 class="widget-title">About Company</h4>-->
                                 <div class="logo-footer clearfix p-b15">
-                                    <a href="index.html"><img src="{{asset('assets/images/logo-light.png')}}" alt=""></a>
+                                    <a href="index.html"><img src="{{asset('assets/images/logoff.png')}}" alt=""></a>
                                 </div>
-								<p class="max-w400">Today we can tell you, thanks to your passion, 
-                                    hard work creativity, and expertise, you delivered us the most beautiful 
-                                    house great looks.</p>                                
+								<p class="max-w400">{{Str::words($Enterprise->body, 20, '...')}}</p>                                
                                 
                                 <ul class="social-icons  mt-social-links">
                                     <li><a href="javascript:void(0);" class="fa fa-google"></a></li>
@@ -61,9 +59,9 @@
                                 <h4 class="widget-title">Contacte-nos</h4>
                                 <ul class="widget_address">
                                     <li>Luanda, Viana, Luanda-Sul, Rua Direita da Clinica Dentária</li>
-                                    <li>comercial@figueirafilipaefilhos.com</li>
-                                    <li>(+244) 012-345-789</li>
-                                    <li>(+244) 146-654-480</li>
+                                    <li>{{$Enterprise->comercial_email}}</li>
+                                    <li>{{$Enterprise->general_phone}}</li>
+                                    <li>{{$Enterprise->comercial_phone}}</li>
                                 </ul>
                            
                             </div>                                              	
@@ -74,10 +72,10 @@
                             <div class="widget widget_services inline-links">
                                 <h4 class="widget-title">Usefual links</h4>
                                 <ul>
-                                    <li><a href="about-1.html">About</a></li>
-                                    <li><a href="project-grid.html">Projects</a></li>
-                                    <li><a href="blog-grid.html">Blog</a></li>
-                                    <li><a href="contact-1.html">Contact Us</a></li>
+                                    <li><a href="{{route('about')}}">Quem Somos</a></li>
+                                    <li><a href="{{route('portfolioindex')}}">Portifólio</a></li>
+                                    <li><a href="{{route('portfolioindex')}}">Notíicias</a></li>
+                                    <li><a href="{{route('contact')}}">Contacto</a></li>
                                 </ul>
                             </div>                           
                         </div>
@@ -87,43 +85,26 @@
 							<div class="widget recent-posts-entry-date">
                                 <h4 class="widget-title">Posts Recentes</h4>
                                 <div class="widget-post-bx">
+                                    @foreach ($posts as $post)
                                     <div class="bdr-light-blue widget-post clearfix  bdr-b-1 m-b10 p-b10">
                                         <div class="mt-post-date text-center text-uppercase text-white p-tb5">
-											<strong class="p-date">24</strong>
-                                            <span class="p-month">April</span>
-                                            <span class="p-year">2019</span>
+											<strong class="p-date">{{$post->created_at->day}}</strong>
+                                            <span class="p-month">{{$post->created_at->month}}</span>
+                                            <span class="p-year">{{$post->created_at->year}}</span>
                                         </div>
                                         <div class="mt-post-info">
                                             <div class="mt-post-header">
-                                                <h6 class="post-title"><a href="blog-single.html">On these beams, we’re building dreams.</a></h6>
+                                                <h6 class="post-title"><a href="blog-single.html">{{Str::words($post->body, 6, '...')}}</a></h6>
                                             </div>
                                             <div class="mt-post-meta">
                                                 <ul>
-                                                    <li class="post-author"><i class="fa fa-user"></i>By Admin</li>
-                                                    <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                    <li class="post-author"><i class="fa fa-user"></i>By {{$post->user->first_name}}</li>
+                                                    <li class="post-comment"><i class="fa fa-comments"></i> {{$post->comment->count()}}</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="bdr-light-blue widget-post clearfix  bdr-b-1 m-b10 p-b10">
-                                        <div class="mt-post-date text-center text-uppercase text-white p-tb5">
-                                            <strong class="p-date">30</strong>
-                                            <span class="p-month">May</span>
-                                            <span class="p-year">2019</span>
-                                        </div>
-                                        <div class="mt-post-info">
-                                            <div class="mt-post-header">
-                                                <h6 class="post-title"><a href="blog-single.html">We’ll be a sensation for you next renovation</a></h6>
-                                            </div>
-                                            <div class="mt-post-meta">
-                                                <ul>
-                                                    <li class="post-author"><i class="fa fa-user"></i>By Admin</li>
-                                                    <li class="post-comment"><i class="fa fa-comments"></i> 29</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
+                                    @endforeach
                                 </div>
                             </div>                          
                         </div>

@@ -25,13 +25,13 @@
                                     <span class="icon-cell  text-primary"><i class="fa fa-phone"></i></span>
                                 </div>
                                 <div class="icon-content">
-                                    <strong>+244 123 456 789</strong>
-                                    <span>Segunda - Sexta: 8:00/17:00</span>
+                                    <strong>{{$Enterprise->general_phone}}</strong>
+                                    <span>Atendimento Geral</span>
                                 </div>
                             
                             </li>
                             <li class="btn-col-last">
-                                <a href="javascript:;" data-toggle="modal" data-target="#with-form" class="site-button-secondry btn-effect">
+                                <a href="javascript:;" data-toggle="modal" data-target="#" class="site-button-secondry btn-effect">
                                     Pedir Cotação
                                 </a>
                             </li>
