@@ -31,7 +31,7 @@ class HomeController extends Component
         $this->Enterprise = $enterprise::where('published', true)->first();
         $this->Services = $service::where('published', true)->orderBy('created_at', 'desc')->get();
         $this->Post = $post::with(['category','user'])->where('published', true)->orderBy('created_at', 'desc')->limit(3)->get();
-        $this->portfolios = $portfolio::with(['service','gallery'])->where('published', true)->orderBy('created_at', 'desc')->get();
+        $this->portfolios = $portfolio::with(['service','gallery'])->where('published', true)->orderBy('created_at', 'desc')->limit(3)->get();
         $this->Team = $team::where('published', true)->orderBy('created_at', 'desc')->get();
 
         $request->visitor()->visit();

@@ -2,7 +2,7 @@
         <div class="page-content">
         
             <!-- INNER PAGE BANNER -->
-            <div class="mt-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style="background-image:url(assets/images/banner/1.jpg);">
+            <div class="mt-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style="background-image:url({{env('MY_PATH').$Enterprise->cover}});">
             	<div class="overlay-main bg-black opacity-07"></div>
                 <div class="container">
                     <div class="mt-bnr-inr-entry">
@@ -53,7 +53,7 @@
                                     <div class="icon-content">
                                         <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">{{Str::ucfirst($service->title)}}</h4>
                                         <p>{{Str::words($service->body, 10, '...')}}</p>
-                                        <a href="{{route('serviceshow', $service->slug)}}" class="site-button-link" data-hover="Read More">Ver Serviço <i class="fa fa-angle-right arrow-animation"></i></a>
+                                        <a href="{{route('serviceshow', $service->slug)}}" class="site-button-link" data-hover="Ver Mais">Ver Serviço <i class="fa fa-angle-right arrow-animation"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@
             <!-- OUR All SERVICES END -->   
             <livewire:web.component.experience-controller>                     
 
-            <livewire:web.component.f-a-q-s-controller>
+            <livewire:web.component.f-a-q-s-controller :faqData='[]'>
             
     </div>
     <!-- CONTENT END -->

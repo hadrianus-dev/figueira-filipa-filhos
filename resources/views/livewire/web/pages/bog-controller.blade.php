@@ -1,7 +1,7 @@
         <!-- CONTENT START -->
         <div class="page-content">
             <!-- INNER PAGE BANNER -->
-            <div class="mt-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style="background-image:url(assets/images/banner/2.jpg);">
+            <div class="mt-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style="background-image:url({{env('MY_PATH').$Enterprise->cover}});">
             	<div class="overlay-main bg-black opacity-07"></div>
                 <div class="container">
                     <div class="mt-bnr-inr-entry">
@@ -60,7 +60,7 @@
                                         
                                         <div class="clearfix">
                                             <div class="mt-post-readmore pull-left">
-                                                 <a href="{{route('postshow', $post->slug)}}" title="READ MORE" rel="bookmark" class="site-button-link">Ver Mais<i class="fa fa-angle-right arrow-animation"></i></a>
+                                                 <a href="{{route('postshow', $post->slug)}}" title="Ver Mais" rel="bookmark" class="site-button-link">Ver Mais<i class="fa fa-angle-right arrow-animation"></i></a>
                                             </div>
                                             <div class="widget_social_inks pull-right">
                                                 <ul class="social-icons social-radius social-dark m-b0">

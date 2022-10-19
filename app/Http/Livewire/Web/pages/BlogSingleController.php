@@ -9,6 +9,7 @@ use Domain\Comment\Models\Comment;
 use Domain\Category\Models\Category;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\OpenGraph;
+use Domain\Enterprise\Models\Enterprise;
 
 class BlogSingleController extends Component
 {
@@ -19,6 +20,7 @@ class BlogSingleController extends Component
     public $categories;
     public $comment;
     public $comments;
+    public $Enterprise;
 
     protected $rules = [
         'comment.name' => 'required|string|min:3',
@@ -26,8 +28,9 @@ class BlogSingleController extends Component
         'comment.body' => 'required|string|min:3'
     ];
 
-    public function mount(Post $post, Category $category, Comment $comment, Request $request): void
+    public function mount(Post $post, Category $category, Comment $comment, Request $request, Enterprise $enterprise): void
     {
+        $this->Enterprise = $enterprise::where('published', true)->first();
         $this->post = $post;
         $this->comment = $comment;
         $this->comments = $comment::where('post_id', $post->id)->orderBy('created_at', 'desc')->get();

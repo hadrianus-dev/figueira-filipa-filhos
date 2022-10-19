@@ -6,16 +6,19 @@ use Livewire\Component;
 use Domain\Gallery\Models\Gallery;
 use Domain\Portfolio\Models\Portfolio;
 use Artesaos\SEOTools\Facades\SEOTools;
+use Domain\Enterprise\Models\Enterprise;
 
 class PortfolioController extends Component
 {
     public $portfolios;
     public $gallery;
+    public $Enterprise;
     
-    public function mount(Portfolio $portfolio, Gallery $gallery): void
+    public function mount(Portfolio $portfolio, Gallery $gallery, Enterprise $enterprise): void
     {
         $this->portfolios = $portfolio::with(['service','gallery'])->where('published', true)->orderBy('created_at', 'desc')->get();
         $this->gallery = $gallery::with(['portfolio'])->where('published', true)->get();
+        $this->Enterprise = $enterprise::where('published', true)->first();
         #dd($this->gallery[3]['portfolio_id']);
         #dd($this->portfolios[0]->gallery()->first()['cover']);
     }

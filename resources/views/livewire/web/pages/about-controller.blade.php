@@ -2,7 +2,7 @@
         <div class="page-content">
         
             <!-- INNER PAGE BANNER -->
-            <div class="mt-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style="background-image:url({{asset('assets/images/banner/1.jpg')}});">
+            <div class="mt-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style="background-image:url({{env('MY_PATH').$Enterprise->cover}});">
             	<div class="overlay-main bg-black opacity-07"></div>
                 <div class="container">
                     <div class="mt-bnr-inr-entry">
@@ -142,7 +142,7 @@
                                             <div class="icon-content">
                                                 <h4 class="mt-tilte m-b25">Building <br>Construction</h4>
                                                 <p>lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.</p>
-                                                <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                                                <a href="#" class="site-button-link" data-hover="Ver Mais">Ver Mais <i class="fa fa-angle-right arrow-animation"></i></a>
                                             </div>
                                         </div>
                                     </div>                            	
@@ -160,7 +160,7 @@
                                             <div class="icon-content">
                                                 <h4 class="mt-tilte m-b25">Building <br>Renovation</h4>
                                                 <p>lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.</p>
-                                                <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                                                <a href="#" class="site-button-link" data-hover="Ver Mais">Ver Mais <i class="fa fa-angle-right arrow-animation"></i></a>
                                             </div>
                                         </div>
                                     </div>                            	
@@ -178,7 +178,7 @@
                                             <div class="icon-content">
                                                 <h4 class="mt-tilte m-b25">Building <br>Maintenance</h4>
                                                 <p>lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.</p>
-                                                <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                                                <a href="#" class="site-button-link" data-hover="Ver Mais">Ver Mais <i class="fa fa-angle-right arrow-animation"></i></a>
                                             </div>
                                         </div>
                                     </div>                            	
@@ -196,7 +196,7 @@
                                             <div class="icon-content">
                                                 <h4 class="mt-tilte m-b25">Architecture<br>Design</h4>
                                                 <p>lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.</p>
-                                                <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                                                <a href="#" class="site-button-link" data-hover="Ver Mais">Ver Mais <i class="fa fa-angle-right arrow-animation"></i></a>
                                             </div>
                                         </div>
                                     </div>                            	

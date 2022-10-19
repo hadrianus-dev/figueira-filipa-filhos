@@ -8,18 +8,26 @@ use Domain\Service\Models\Service;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\OpenGraph;
 use Domain\Enterprise\Models\Enterprise;
+use Domain\Portfolio\Models\Portfolio;
 
 class ServiceSingleController extends Component
 {
     public $Enterprise;
     public $service;
+    public $FAQ;
+    public $portfolios;
+    public $portfolio;
 
-    public function mount(Service $service, Enterprise $enterprise, Request $request): void
+    public function mount(Service $service, Enterprise $enterprise, Request $request, Portfolio $portfolio): void
     {
         $this->Enterprise = $enterprise::where('published', true)->first();
         $this->service = $service;
+        $this->FAQ = $service->FAQ()->where('published', true)->get();
+        $this->portfolios = $portfolio->where('published', true)->get();
+        $this->portfolio = $portfolio->where('service_id', $this->service->id)->orderBy('created_at', 'desc')->limit(3)->get();
         $request->visitor()->visit($service); 
     }
+    
     public function render()
     {
         $base = 'https://figueirafilipaefilhos.com/post/';

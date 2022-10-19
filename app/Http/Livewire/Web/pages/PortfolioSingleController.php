@@ -8,16 +8,19 @@ use Domain\Gallery\Models\Gallery;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Domain\Portfolio\Models\Portfolio;
 use Artesaos\SEOTools\Facades\OpenGraph;
+use Domain\Enterprise\Models\Enterprise;
 
 class PortfolioSingleController extends Component
 {
     public $portfolio;
     public $gallery;
+    public $Enterprise;
     
-    public function mount(Portfolio $portfolio, Gallery $gallery, Request $request): void
+    public function mount(Portfolio $portfolio, Gallery $gallery, Enterprise $enterprise, Request $request): void
     {
         $this->portfolio = $portfolio;
         $this->gallery = $this->portfolio->gallery()->get();
+        $this->Enterprise = $enterprise::where('published', true)->first();
         #dd($this->gallery);
         #dd($this->portfolios[0]->gallery()->first()['cover']);
         $request->visitor()->visit($portfolio); 

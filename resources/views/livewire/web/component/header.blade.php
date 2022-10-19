@@ -112,15 +112,7 @@
                             </div> 
                         </div>     
                         <!-- SITE Search -->
-                        <div id="search"> 
-                            <span class="close"></span>
-                            <form role="search" id="searchform" action="/search" method="get" class="radius-xl">
-                                <div class="input-group">
-                                    <input value="" name="q" type="search" placeholder="Type to search"/>
-                                    <span class="input-group-btn"><button type="button" class="search-btn"><i class="fa fa-search arrow-animation"></i></button></span>
-                                </div>   
-                            </form>
-                        </div>
+                        <livewire:component.search>
                         
                         <!-- MAIN Nav -->
                         <div class="header-nav navbar-collapse collapse">

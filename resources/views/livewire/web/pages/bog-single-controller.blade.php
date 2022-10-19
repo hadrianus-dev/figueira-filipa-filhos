@@ -1,7 +1,7 @@
         <!-- CONTENT START -->
         <div class="page-content ">
             <!-- INNER PAGE BANNER -->
-            <div class="mt-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style="background-image:url({{asset('assets/images/banner/3.jpg')}});">
+            <div class="mt-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style="background-image:url({{env('MY_PATH').$Enterprise->cover}});">
             	<div class="overlay-main bg-black opacity-07"></div>
                 <div class="container">
                     <div class="mt-bnr-inr-entry">
@@ -125,7 +125,7 @@
                                                         <p>{{Str::words($similar->body, 8, '...')}}</p> 
                                                     </div>
                                                     <div class="readmore-line">
-                                                        <span><a href="#" class="site-button-link" data-hover="Read More">Ver Mais <i class="fa fa-angle-right arrow-animation"></i></a></span>
+                                                        <span><a href="#" class="site-button-link" data-hover="Ver Mais">Ver Mais <i class="fa fa-angle-right arrow-animation"></i></a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -155,7 +155,7 @@
                                                             <p>{{Str::words($post->body, 8, '...')}}</p> 
                                                         </div>
                                                         <div class="readmore-line">
-                                                            <span><a href="{{route('postshow', $post->slug)}}" class="site-button-link" data-hover="Read More">Ver Mais<i class="fa fa-angle-right arrow-animation"></i></a></span>
+                                                            <span><a href="{{route('postshow', $post->slug)}}" class="site-button-link" data-hover="Ver Mais">Ver Mais<i class="fa fa-angle-right arrow-animation"></i></a></span>
                                                         </div>
                                                     </div>
                                                 </div>

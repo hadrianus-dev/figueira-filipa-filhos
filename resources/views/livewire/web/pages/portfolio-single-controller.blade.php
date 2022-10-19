@@ -1,7 +1,7 @@
         <!-- CONTENT START -->
         <div class="page-content">
             <!-- INNER PAGE BANNER -->
-            <div class="mt-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style="background-image:url(assets/images/banner/5.jpg);">
+            <div class="mt-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style="background-image:url({{env('MY_PATH').$Enterprise->cover}});">
             	<div class="overlay-main bg-black opacity-07"></div>
                 <div class="container">
                     <div class="mt-bnr-inr-entry">

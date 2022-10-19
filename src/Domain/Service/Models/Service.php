@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Domain\Service\Models;
 
+use Domain\FAQ\Models\FAQ;
 use Domain\Category\Models\Category;
 use Domain\Portfolio\Models\Portfolio;
 use Shetabit\Visitor\Traits\Visitable;
@@ -60,6 +61,15 @@ class Service extends Model
     {
         return $this->hasMany(
             related: Portfolio::class,
+            foreignKey: 'service_id'
+        );
+    }
+
+    
+    public function FAQ(): HasMany
+    {
+        return $this->hasMany(
+            related: FAQ::class,
             foreignKey: 'service_id'
         );
     }

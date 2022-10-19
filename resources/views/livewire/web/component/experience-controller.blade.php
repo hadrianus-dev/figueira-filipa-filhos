@@ -10,7 +10,9 @@
                                             <div class="p-a30 bg-primary bg-bottom-right" style="background-image:url(assets/images/background/bg-site.png);">
                                                 <div class="text-black">
                                                     <h4 class="mt-tilte m-t0">Receba um Resumo</h4>
-                                                    <p>Typefaces and layouts, and in appearance of different general the content of dorem ipsum dolor sit amet. </p>
+                                                    <p>Receba um resumo dos nossos serviços. Obtenha em suas mãos uma oportunidade
+                                                        de conhecer melhor a Figueira, Filipa & Filhos.
+                                                    </p>
                                                     <a href="javascript:;" class="site-button-secondry btn-half"><span> Download brochure</span></a>
                                                 </div>
                                             </div>                                    
@@ -18,8 +20,10 @@
                                         <div class="col-md-6">
                                                 <div class="text-white p-r15">
                                                     <h4 class="mt-tilte">Podemos Ajudar Você!</h4>
-                                                   <p>There are many variations of passages of lorem available, but the majority have suffered alteration in some form, by inject humour, or randomised words which don't look even slightly believable.</p>
-                                                    <a href="javascript:;" class="site-button btn-effect">Contact Us</a>
+                                                   <p>Temos uma equipe de suporte altamente especializada e completamente pronta para
+                                                    lhe atender. Não receie, entre em contacto, o nosso suporte adoraria fal com você agora mesmo!
+                                                   </p>
+                                                    <a href="{{route('contact')}}" class="site-button btn-effect">Contacte-nos</a>
                                                 </div>
     
                                         </div>
@@ -29,16 +33,16 @@
                             <div class="col-md-5 col-sm-6 m-b30">
                                 <div class="our-exp">
                                     <div class="mt-box">
-                                        <h3 class="m-t0"><span class="font-weight-100"> Nós Temos</span><span class="text-primary"> 15 anos</span> de experiência no mercado</h3>
+                                        <h3 class="m-t0"><span class="font-weight-100"> À Mais de</span><span class="text-primary"> 15 anos</span> no mercado entregando</h3>
                                     </div>                                    
-                                    <span class="progressText text-black"><B>Reparações</B></span>
+                                    <span class="progressText text-black"><B>Serviços de Qualidade</B></span>
                                     <div class="progress mt-probar-1  m-b30 m-t10">
                                         <div class="progress-bar bg-primary " role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >
                                             <span  class="popOver" data-toggle="tooltips" data-placement="top" title="85%"></span>
                                         </div>
                                     </div>
                                     
-                                    <span class="progressText text-black"><B>Montagem</B></span>
+                                    <span class="progressText text-black"><B>Suporte de Qualidade</B></span>
                                     <div class="progress mt-probar-1 m-b30 m-t10">
                                         <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="78" aria-valuemin="10" aria-valuemax="100">
                                             <span  class="popOver" data-toggle="tooltips" data-placement="top" title="78%"></span>
@@ -46,10 +50,10 @@
                                     </div>
         
                                    
-                                    <span class="progressText text-black"><B>Instalações</B></span>
+                                    <span class="progressText text-black"><B>Excelente Tempo de Resposta</B></span>
                                     <div class="progress mt-probar-1 m-b30 m-t10">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                            <span  class="popOver" data-toggle="tooltips" data-placement="top" title="40%"></span>
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100">
+                                            <span  class="popOver" data-toggle="tooltips" data-placement="top" title="93%"></span>
                                         </div>
                                     </div>
                                    

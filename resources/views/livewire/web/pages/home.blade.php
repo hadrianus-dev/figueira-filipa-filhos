@@ -22,7 +22,7 @@
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Missão</h4>
                                             <p>{{$Enterprise->mission}}</p>
-                                            <a href="{{route('about')}}" class="site-button-link" data-hover="Read More">Saiba Mais <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <a href="{{route('about')}}" class="site-button-link" data-hover="Ver Mais">Saiba Mais <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                     <div class="bg-cover  half-blocks-bg" style="background-image:url({{asset('assets/images/services/1.jpg')}})"></div>
@@ -41,7 +41,7 @@
                                     <div class="icon-content">
                                         <h4 class="mt-tilte m-b25">Visão</h4>
                                         <p>{{$Enterprise->vision}}</p>
-                                        <a href="{{route('about')}}" class="site-button-link" data-hover="Read More">Saiba Mais <i class="fa fa-angle-right arrow-animation"></i></a>
+                                        <a href="{{route('about')}}" class="site-button-link" data-hover="Ver Mais">Saiba Mais <i class="fa fa-angle-right arrow-animation"></i></a>
                                     </div>
                                 </div>
                                 <div class="bg-cover  half-blocks-bg" style="background-image:url({{asset('assets/images/services/3.jpg')}})"></div>
@@ -59,7 +59,7 @@
                                     <div class="icon-content">
                                         <h4 class="mt-tilte m-b25">Valor</h4>
                                         <p>{{$Enterprise->value}}</p>
-                                        <a href="{{route('about')}}" class="site-button-link" data-hover="Read More">Saiba Mais<i class="fa fa-angle-right arrow-animation"></i></a>
+                                        <a href="{{route('about')}}" class="site-button-link" data-hover="Ver Mais">Saiba Mais<i class="fa fa-angle-right arrow-animation"></i></a>
                                     </div>
                                 </div>
                                 <div class="bg-cover  half-blocks-bg" style="background-image:url({{asset('assets/images/services/2.jpg')}})"></div>
@@ -231,25 +231,15 @@
                                 <!-- TITLE START -->
                                 <div class="video-part-2">
                                     <h3><span class="font-weight-100">Provemos</span> o necessário e fazemos tudo acontecer</h3>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.there are many 																				                                                     variations of passages of Ipsum available,</p> 
+                                    <p>
+                                        <p class="services-one__top-text">Por aqui, usamos das diversas maneiras para alcançar mais resultados e em menos tempo, sem deixar de lado 
+                                            a qualidade, seja com treinamentos, aplicativos, trabalho em equipe e, é claro, vontade de trabalhar.</p> 
                                     <ul class="list-angle-right anchor-line">
-                                        <li><a href="#">Construction Management</a></li>
-                                        <li><a href="#">Pre Construction Services</a></li>
-                                        <li><a href="#">Contract Administration</a></li>
+                                        <li><a href="#">Primando por excelência em todas as circunstâncias</a></li>
+                                        <li><a href="#">Tempo de entrega com alto índece de precisão</a></li>
+                                        <li><a href="#">Alta valorização dos parceiros e clientes</a></li>
                                     </ul>                                           
                                 </div>                   
-                                <!-- TITLE END -->
-                                <div class="author-info author-info-v2 p-t20">
-                                    
-                                    <div class="author-signature">
-                                        <img src="{{asset('assets/images/Signature+Black.png')}}" alt="Signature" width="150">
-                                    </div>
-                                    <div class="author-name">
-                                        <h4 class="m-t0">David Houkr</h4>
-                                        <p>Architect & Founder</p>
-                                    </div>
-                                </div>                                  
-                                
                                 
                             </div>
                         </div>
@@ -303,15 +293,12 @@
                                         
                                         <div class="clearfix">
                                             <div class="mt-post-readmore pull-left">
-                                                <a href="{{route('postshow', $post->slug)}}" title="READ MORE" rel="bookmark" class="site-button-link">Read More<i class="fa fa-angle-right arrow-animation"></i></a>
+                                                <a href="{{route('postshow', $post->slug)}}" title="Ver Mais" rel="bookmark" class="site-button-link">Ver Mais<i class="fa fa-angle-right arrow-animation"></i></a>
                                             </div>
                                             <div class="widget_social_inks pull-right">
                                                 <ul class="social-icons social-radius social-dark m-b0">
-                                                    <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                                    <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                                                    <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
-                                                    <li><a href="javascript:void(0);" class="fa fa-youtube"></a></li>
-                                                    <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
+                                                    <li><a href="http://www.facebook.com/share.php?u=https://egoliworldbusiness.com/post/{{$post->slug}}" class="fa fa-facebook"></a></li>
+                                                    <li><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="fa fa-twitter"></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -357,7 +344,7 @@
                                                 <div class="icon-content">
                                                     <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">{{Str::ucfirst($service->title)}}</h4>
                                                     <p>{{Str::words($service->body, 10, '...')}}</p>
-                                                    <a href="{{route('serviceshow', $service->slug)}}" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                                                    <a href="{{route('serviceshow', $service->slug)}}" class="site-button-link" data-hover="Ver Mais">Ver Mais <i class="fa fa-angle-right arrow-animation"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -405,30 +392,30 @@
 
                         <div class="container-fluid">
                             <div class="section-content">            
-                                <div class="work-carousel-outer">
-                                    <div class="owl-carousel work-carousel owl-btn-vertical-center">
-                                        @foreach ($portfolios as $portfolio)
-                                        <!--Portfolio Single Start-->
-                                        @if ($portfolio->gallery())
-                                        <!-- COLUMNS 1 -->
-                                        <div class="item mt-box">
-                                            <div class="mt-img-effect mt-img-overlay7">
-                                                <img src="{{env('MY_PATH').$portfolio->gallery()->first()->cover}}" alt="">
+                                @foreach ($portfolios as $portfolio)
+                                <!--Portfolio Single Start-->
+                                @if ($portfolio->gallery())
+                                <!-- COLUMNS 1 -->
+                                <div class="masonry-item cat-1  col-md-4 col-sm-6 m-b30">
+                                    <div class="image-effect-two hover-shadow">
+                                        <img src="{{env('MY_PATH').$portfolio->gallery()->first()->cover}}" alt=""/>
+                                        <div class="figcaption">
+                                            <h4 class="mt-tilte">{{$portfolio->title}}</h4>
+                                            <p>{{Str::words($portfolio->body, 15, '...')}}</p>
+                                            <a href="{{route('portfolioshow', $portfolio->slug)}}" class="read-more site-button btn-effect">Ver Portifólio</a>
+                                            <a class="mfp-link" href="{{env('MY_PATH').$portfolio->gallery()->first()->cover}}">
+                                                <i class="fa fa-arrows-alt"></i>
+                                            </a>
                                         </div>
-                                            <div class="mt-info p-a30">
-                                                <h4 class="m-b20 m-t0"><a href="{{route('portfolioshow', $portfolio->slug)}}">{{$portfolio->title}}</a></h4>
-                                                <p>{{Str::words($portfolio->body, 8, '...')}}</p>
-                                                <a href="{{route('portfolioshow', $portfolio->slug)}}" class="site-button btn-effect">Ver Portifólio</a>
-                                            </div>                                   
-                                        </div>
-                                        @endif
-                                        @endforeach                                                                                                     
                                     </div>
-                                </div> 
+                                </div>
+                                <!-- COLUMNS 1 -->
+                                @endif
+                                @endforeach 
                             </div>
                         </div>
                     
-    <!-- SECTION CONTENT END  -->
+                        <!-- SECTION CONTENT END  -->
                     
                 </div>
                 

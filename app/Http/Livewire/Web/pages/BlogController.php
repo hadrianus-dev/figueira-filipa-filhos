@@ -5,13 +5,16 @@ namespace App\Http\Livewire\Web\Pages;
 use Livewire\Component;
 use Domain\Post\Models\Post;
 use Artesaos\SEOTools\Facades\SEOMeta;
+use Domain\Enterprise\Models\Enterprise;
 
 class BlogController extends Component
 {
     public $Post;
+    public $Enterprise;
     
-    public function mount(Post $post): void
+    public function mount(Post $post, Enterprise $enterprise): void
     {
+        $this->Enterprise = $enterprise::where('published', true)->first();
         $this->Post = $post::with(['category','user'])->where('published', true)->orderBy('created_at', 'desc')->get();
     }
 
