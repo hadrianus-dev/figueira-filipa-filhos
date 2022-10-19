@@ -4,20 +4,22 @@ declare(strict_types=1);
 
 namespace Domain\Enterprise\Models;
 
+use Domain\Shared\Models\User;
 use Domain\Category\Models\Category;
+use Shetabit\Visitor\Traits\Visitable;
 use Illuminate\Database\Eloquent\Model;
 use Domain\Shared\Models\Concerns\HasSlug;
-use Domain\Enterprise\Models\Builders\EnterpriseBuilder;
-use Domain\Shared\Models\User;
 use JustSteveKing\KeyFactory\Models\Concerns\HasKey;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Domain\Enterprise\Models\Builders\EnterpriseBuilder;
 
 class Enterprise extends Model
 {
     use HasKey;
     use HasSlug;
     use HasFactory;
+    use Visitable;
 
     protected $fillable = [
         'key',

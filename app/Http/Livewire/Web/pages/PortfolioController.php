@@ -2,9 +2,10 @@
 
 namespace App\Http\Livewire\Web\Pages;
 
+use Livewire\Component;
 use Domain\Gallery\Models\Gallery;
 use Domain\Portfolio\Models\Portfolio;
-use Livewire\Component;
+use Artesaos\SEOTools\Facades\SEOTools;
 
 class PortfolioController extends Component
 {
@@ -21,6 +22,16 @@ class PortfolioController extends Component
 
     public function render()
     {
+        
+        SEOTools::setTitle('Contacto');
+        SEOTools::setDescription('Temos um suporte altamente especializado e completamente a seu dispor. 
+        Entre em contacto e saia agora mesmo da zona de incerteza, obtenha explicações claras do que quer.');
+        SEOTools::opengraph()->setUrl('https://figueirafilipaefilhos.com/contact');
+        SEOTools::setCanonical('https://figueirafilipaefilhos.com/portfolio');
+        SEOTools::opengraph()->addProperty('type', 'articles');
+        SEOTools::twitter()->setSite('@egoliworldbusiness');
+        SEOTools::jsonLd()->addImage('https://figueirafilipaefilhos.com/public/assets/images/resources/logo-1.png');
+        
         return view('livewire.web.pages.portfolio-controller')->layout('layouts.base');
     }
 }

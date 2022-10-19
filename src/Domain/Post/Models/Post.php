@@ -5,9 +5,10 @@ declare(strict_types=1);
 namespace Domain\Post\Models;
 
 use Domain\Shared\Models\User;
+use Domain\Comment\Models\Comment;
 use Domain\Gallery\Models\Gallery;
 use Domain\Category\Models\Category;
-use Domain\Comment\Models\Comment;
+use Shetabit\Visitor\Traits\Visitable;
 use Illuminate\Database\Eloquent\Model;
 use Domain\Shared\Models\Concerns\HasSlug;
 use Domain\Post\Models\Builders\PostBuilder;
@@ -21,6 +22,7 @@ class Post extends Model
     use HasKey;
     use HasSlug;
     use HasFactory;
+    use Visitable;
 
     protected $fillable = [
         'key',
