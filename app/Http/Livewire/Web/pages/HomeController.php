@@ -19,7 +19,8 @@ class HomeController extends Component
     public $portfolios;
     public $Team;
 
-    public function mount(Enterprise $enterprise, Service $service, Post $post, Portfolio $portfolio,Team $team): void
+    public function mount(Enterprise $enterprise, Service $service, 
+                        Post $post, Portfolio $portfolio,Team $team): void
     {
         $this->Enterprise = $enterprise::where('published', true)->first();
         $this->Services = $service::where('published', true)->orderBy('created_at', 'desc')->get();
