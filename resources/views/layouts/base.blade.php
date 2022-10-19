@@ -11,7 +11,6 @@
         <!-- FONTAWESOME STYLE SHEET -->
         <link rel="stylesheet" type="text/css" href="{{asset('assets/css/fontawesome/css/font-awesome.min.css')}}" />
 
-
         <!-- OWL CAROUSEL STYLE SHEET -->
         <link rel="stylesheet" type="text/css" href="{{asset('assets/css/owl.carousel.min.css')}}">
 
