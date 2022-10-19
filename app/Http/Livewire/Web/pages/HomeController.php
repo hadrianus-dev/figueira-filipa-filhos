@@ -44,7 +44,7 @@ class HomeController extends Component
         SEOTools::setDescription('A Egoli World Business é uma empresa angolana, 
         sediada em Luanda e com delegações em Portugal e na República do Congo, 
         que procura promover parcerias para o desenvolvimento das comunidades. ');
-        SEOMeta::keyWords('Figueira Filipa & Filhos','FFF','Eletricidade','Construção Civil','FFF - Eletrica','FFF serviços'); 
+        SEOMeta::addKeyword('Figueira Filipa & Filhos','FFF','Eletricidade','Construção Civil','FFF - Eletrica','FFF serviços'); 
         SEOTools::opengraph()->setUrl('https://egoliworldbusiness.com');
         SEOTools::setCanonical('https://egoliworldbusiness.com');
         SEOTools::opengraph()->addProperty('type', 'articles');
