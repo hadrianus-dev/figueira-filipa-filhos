@@ -112,7 +112,7 @@
                             </div> 
                         </div>     
                         <!-- SITE Search -->
-                        <livewire:component.search>
+                        <livewire:web.component.header-search>
                         
                         <!-- MAIN Nav -->
                         <div class="header-nav navbar-collapse collapse">

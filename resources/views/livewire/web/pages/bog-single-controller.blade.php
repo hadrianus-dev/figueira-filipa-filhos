@@ -183,7 +183,6 @@
                                                         <a href="javascript:void(0);">{{$item->created_at->diffForHumans()}}</a>
                                                     </div>                                        
                                                     <div class="comment-author vcard">
-                                                        <img  class="avatar photo" src="{{asset('assets/images/testimonials/pic1.jpg')}}" alt="">
                                                         <cite class="fn">{{Str::ucfirst($item->name)}}</cite>
                                                         <span class="says">diz:</span>
                                                     </div>
@@ -240,19 +239,7 @@
                             <aside  class="side-bar">
                                 
                                     <!-- SEARCH -->
-                                    <div class="widget bg-white ">
-                                        <h4 class="widget-title ">Search</h4>
-                                        <div class="search-bx">
-                                            <form role="search" method="post">
-                                                <div class="input-group">
-                                                    <input name="news-letter" type="text" class="form-control bg-gray" placeholder="Write your text">
-                                                    <span class="input-group-btn bg-gray">
-                                                        <button type="submit" class="btn"><i class="fa fa-search"></i></button>
-                                                    </span>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
+                                    <livewire:web.component.blog-search>
                                     
                                     <!-- OUR CLIENT -->
                                     <div class="widget">
